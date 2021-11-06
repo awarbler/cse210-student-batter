@@ -79,7 +79,7 @@ class HandleCollisionsAction(Action):
         ball = cast["ball"][0]
         position = ball.get_position()
         ball_y = position.get_y()
-        if ball_y >= constants.MAX_Y +2: # - 1 to test but +2 to run game
+        if ball_y >= constants.MAX_Y: # - 1 to test but +2 to run game
             sys.exit()
     
     def ball_ceiling_collision(self, cast):
