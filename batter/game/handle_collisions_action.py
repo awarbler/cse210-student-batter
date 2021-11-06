@@ -54,7 +54,8 @@ class HandleCollisionsAction(Action):
         ball_x_position = ball.get_position().get_x()
         ball_y_position = ball.get_position().get_y()
         
-        if (ball_y_position == paddle_y_position +2 
+        if (ball_y_position == paddle_y_position
+
             and ball_x_position >= paddle_x_position 
             and ball_x_position <= paddle_x_position + len(paddle.get_text())):
             velocity = ball.get_velocity()
